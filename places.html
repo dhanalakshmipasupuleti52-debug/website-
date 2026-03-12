@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tourist Places</title>
+<link rel="stylesheet" href="design.css">
+</head>
+
+<body>
+
+<header>
+<h1>Tourist Places</h1>
+<nav>
+  <ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="places.html">Places</a></li>
+<li><a href="tickets.html">Tickets</a></li>
+<li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+</header>
+
+
+<section class="section" id="places">
+
+<h2>Popular Tourist Destinations</h2>
+
+<div class="cards">
+
+<!-- Taj Mahal -->
+<div class="card">
+<img src="tajmahal.jpg" alt="Taj Mahal">
+
+<div class="card-content">
+<h3>Taj Mahal</h3>
+
+<p>Located in Agra, India, the Taj Mahal is one of the Seven Wonders of the World and a symbol of love.</p>
+
+<button onclick="bookPlace('Taj Mahal')">Book Now</button>
+
+</div>
+</div>
+
+
+<!-- Eiffel Tower -->
+<div class="card">
+<img src="istockphoto-2119799972-612x612.jpg" alt="Eiffel Tower">
+
+<div class="card-content">
+<h3>Eiffel Tower</h3>
+
+<p>The Eiffel Tower in Paris is a global cultural icon of France and one of the most recognizable structures.</p>
+
+<button onclick="bookPlace('Eiffel Tower')">Book Now</button>
+
+</div>
+</div>
+
+
+<!-- Great Wall -->
+<div class="card">
+<img src="photo-1512453979798-5ea266f8880c.jpg" alt="Great Wall">
+
+<div class="card-content">
+<h3>Great Wall of China</h3>
+
+<p>An ancient series of walls and fortifications, totaling more than 13,000 miles in length.</p>
+
+<button onclick="bookPlace('Great Wall of China')">Book Now</button>
+
+</div>
+</div>
+
+
+<!-- Statue of Liberty -->
+<div class="card">
+<img src="pexels-photo-5658242.jpeg" alt="Statue of Liberty">
+
+<div class="card-content">
+<h3>Statue of Liberty</h3>
+
+<p>A symbol of freedom in the United States, located on Liberty Island in New York Harbor.</p>
+
+<button onclick="bookPlace('Statue of Liberty')">Book Now</button>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+
+<script>
+
+function bookPlace(place){
+
+alert(place + " added for booking!");
+
+localStorage.setItem("selectedPlace", place);
+
+window.location.href = "tickets.html";
+
+}
+
+</script>
+
+</body>
+</html>
